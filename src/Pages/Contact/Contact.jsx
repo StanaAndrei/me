@@ -1,9 +1,7 @@
-function Contact(props) {
+export default function Contact(props) {
   return (
     <div>
       Contact
     </div>
   );
 }
-
-export default Contact;
