@@ -1,8 +1,9 @@
 import { Router, Route } from "@solidjs/router";
+import "./App.scss"
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import Sidebar from './Components/Sidebar/Sidebar';
-import "./App.scss"
+import Resume from './Pages/Resume/Resume';
 
 function App() {
   return <div>
@@ -12,7 +13,7 @@ function App() {
 
       <Route path="/" component={Home} />
       <Route path="/contact" component={Contact} />
-      <Route path="/resume" component={null} />
+      <Route path="/resume" component={Resume} />
     </Router>
     </div>
   </div>

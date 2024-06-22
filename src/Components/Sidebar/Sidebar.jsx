@@ -7,6 +7,7 @@ export default function Sidebar(props) {
     <div class="sidebar">
       <img src={fbpic} alt="" />
       <a  href="/me/">Home</a>
+      <a  href="/me/resume">Resume</a>
       <a  href="/me/contact">Contact</a>
     </div>
   );
