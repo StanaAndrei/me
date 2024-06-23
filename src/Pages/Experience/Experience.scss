@@ -1,9 +1,14 @@
-// JobList.scss
+// Experience.scss
+
 .job-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;  // Ensure it stacks vertically on smaller screens
+  }
 }
 
 .job-card {
@@ -13,55 +18,66 @@
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  .company-logo {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 1rem;
+.company-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.job-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: -0.5rem;
+}
+
+.interval {
+  font-size: 1rem;
+  color: #666;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;  // Ensure technologies wrap to new lines on smaller screens
+  gap: 0.5rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.technologies li {
+  background-color: #eef;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .job-card {
+    flex-direction: column;  // Stack job details below the company logo on smaller screens
   }
 
-  .job-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-
-    .company-name {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    .role {
-      font-size: 1.2rem;
-      color: #555;
-      margin-top: -0.5rem;
-    }
-
-    .interval {
-      font-size: 1rem;
-      color: #666;
-    }
-
-    .description {
-      font-size: 1rem;
-      color: #333;
-    }
-
-    .technologies {
-      display: flex;
-      gap: 0.5rem;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-
-      li {
-        background-color: #eef;
-        padding: 0.5rem;
-        border-radius: 5px;
-        font-size: 0.9rem;
-      }
-    }
+  .company-logo {
+    margin-bottom: 1rem;  // Add space between logo and job details on smaller screens
   }
 }
