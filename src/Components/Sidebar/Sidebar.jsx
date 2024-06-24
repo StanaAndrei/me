@@ -5,6 +5,7 @@ export default function Sidebar(props) {
   return (
     <div class="sidebar">
       <img src={fbpic} alt="" />
+      <h2>Stana Andrei</h2>
       <a href="/me/">Home</a>
       <a href="/me/resume">Resume</a>
       <a href="/me/experience">Experience</a>

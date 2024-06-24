@@ -12,6 +12,11 @@ body {
   height: 100%;
   overflow: auto;
 
+  h2 {
+    color: white;
+    text-align: center;
+  }
+
   img {
     border-radius: 50%;
     display: block;
@@ -19,7 +24,7 @@ body {
     margin-right: auto;
     width: 50%;
     margin-top: 11%;
-    margin-bottom: 22%;
+    margin-bottom: 10%;
   }
 
   a {
