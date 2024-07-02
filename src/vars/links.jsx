@@ -6,5 +6,5 @@ export const links = [
   { text: 'Linkedin', url: 'https://www.linkedin.com/in/stana-andrei-6344a8221/' },
   { text: 'Github', url: 'https://github.com/StanaAndrei' },
   { text: 'Gitlab', url: 'https://gitlab.com/StanaAndrei' },
-
+  { text: 'Reddit', url: 'https://www.reddit.com/user/SHURIMPALEZZ/' }
 ]
