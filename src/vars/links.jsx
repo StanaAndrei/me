@@ -8,4 +8,5 @@ export const links = [
   { text: 'Gitlab', url: 'https://gitlab.com/StanaAndrei' },
   { text: 'Reddit', url: 'https://www.reddit.com/user/SHURIMPALEZZ/' },
   { text: 'Leetcode', url: 'https://leetcode.com/u/DevAS/' },
+  { text: 'HackerRank', url: 'https://www.hackerrank.com/profile/StanaAndrew' },
 ]
